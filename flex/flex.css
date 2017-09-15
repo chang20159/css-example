@@ -1,0 +1,85 @@
+section{
+    padding: 0 10px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+section .title{
+	border-left: 5px solid #ff6633;
+	padding-left: 5px;
+    color: #333;
+}
+
+.demo-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.demo{
+	width: 500px;
+	padding: 10px;
+	display: inline-block;
+	box-shadow: 2px 2px 3px 1px #eee;
+	background-color: #fff;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    color: #666;
+}
+.desc{
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.container{
+	display: flex;
+	display: -webkit-flex;
+	text-align: center;
+	background-color: #eee;
+    height: 70px;
+	line-height: 30px;
+}
+
+.container-inline{
+	display: inline-flex;
+	display: -webkit-inline-flex;
+}
+
+.container .item{
+   width: 200px;
+   height: 30px;
+   background-color: #eee;
+   color: #fff;
+   font-size: 12px;
+}
+
+.container .item:nth-child(4n+1){
+	background-color: #BB4444;
+}
+
+.container .item:nth-child(4n+2){
+	background-color: #A2945E;
+}
+
+.container .item:nth-child(4n+3){
+	background-color: #875EA2;
+}
+
+.container .item:nth-child(4n){
+	background-color: #BB445C;
+}
+
+.container.direction-row{
+	flex-direction: row;
+}
+
+.container.direction-row-reverse{
+	flex-direction: row-reverse;
+}
+
+.container.direction-column{
+	flex-direction: column;
+}
+
+.container.direction-column-reverse{
+	flex-direction: column-reverse;
+}

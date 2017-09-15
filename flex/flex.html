@@ -1,0 +1,81 @@
+<html !DOCTYPE html>
+    <head>
+	  	<meta charset="utf-8">
+	  	<meta title="弹性盒布局">
+	  	<link rel="stylesheet" type="text/css" href="./flex.css">
+   </head>
+   <body>
+   		<!-- display: flex; -->
+   		<section>
+   			<p class="title">display: flex | inline-flex;</p>
+   			<div class="demo-group">
+   				<div class="demo">
+		  	    	<div class="desc">display: flex;<br/>container横向占满父容器</div>
+		  	  		<div class="container">
+			  	  	    <div class="item">width:200px</div>
+			  	  	    <div class="item">width:200px</div>
+			  	    </div>
+		  	    </div>
+		  	  	<div class="demo">
+		  	    	<div class="desc">display: flex;<br/>item超过平分</div>
+		  	  		<div class="container">
+			  	  	    <div class="item">width:200px</div>
+			  	  	    <div class="item">width:200px</div>
+			  	  	    <div class="item">width:200px</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: inline-flex;<br/>container宽度为子元素宽度</div>
+		  	  		<div class="container container-inline">
+			  	  	    <div class="item">width:200px</div>
+			  	  	    <div class="item">width:200px</div>
+			  	    </div>
+		  	    </div>
+		  	  	<div class="demo">
+		  	    	<div class="desc">display: inline-flex;<br/>container宽度为子元素宽度</div>
+		  	  		<div class="container container-inline">
+			  	  	    <div class="item">width:200px</div>
+			  	  	    <div class="item">width:200px</div>
+			  	  	    <div class="item">width:200px</div>
+			  	    </div>
+		  	    </div>
+   			</div>
+   		</section> 
+		<!-- flex-direction -->
+   		<section>
+   			<p class="title">flex-direction: row | row-reverse | column | column-reverse</p>
+   			<div class="demo-group">
+   				<div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-direction:row;(默认)</div>
+		  	  		<div class="container direction-row">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	  	<div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-direction:row-reverse;</div>
+		  	  		<div class="container direction-row-reverse">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-direction:column;</div>
+		  	  		<div class="container direction-column">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-direction:row-reverse;</div>
+		  	  		<div class="container direction-column-reverse">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+   			</div>
+
+   		</section> 
+  	    
+   </body>
+</html>
