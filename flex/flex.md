@@ -35,18 +35,18 @@ display: flex | inline-flex
 	- 可选值：flex-start | flex-end | center | space-around | space-between
 	- 默认值： flex-start
 
-- align-content
-
-	- 设置所有行沿侧轴的对齐方式，并分配剩余可用空间。与justify-content类似。
-	- 可选值： flex-start | flex-end | center | space-around | space-between | stretch
-	- 默认值： stretch
-
 - align-items
 	
 	- 设置container内所有item在侧轴上的对齐方式
 	- 可选值： flex-start | flex-end | center | baseline | stretch
 	- 默认值： stretch
 	- item可以通过设置align-self覆盖container的align-items属性
+
+- align-content
+
+	- 定义多根轴线之间的对齐方式，并分配剩余可用空间。若没有多根轴线，则不起作用
+	- 可选值： flex-start | flex-end | center | space-around | space-between | stretch
+	- 默认值： stretch
 
 ### item属性
 

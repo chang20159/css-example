@@ -74,8 +74,331 @@
 			  	    </div>
 		  	    </div>
    			</div>
-
    		</section> 
-  	    
+  	    <!-- flex-wrap -->
+  	    <section>
+  	    	<p class="title">flex-wrap: nowrap | wrap | wrap-reverse</p>
+  	    	<div class="demo-group">
+  	    		<div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-wrap: nowrap;(默认)</div>
+		  	  		<div class="container" style="flex-wrap: nowrap">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-wrap: wrap  超过往正方向折行</div>
+		  	  		<div class="container" style="flex-wrap: wrap">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+
+				<div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-wrap: wrap-reverse 超过往反方向折行</div>
+		  	  		<div class="container" style="flex-wrap: wrap-reverse">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div> 
+		  	</div>
+  	    </section>
+		<!-- flex-flow -->
+		<section>
+  	    	<p class="title">flex-flow: flex-direction  flex-wrap  </p>
+  	    	<div class="demo-group">
+  	    		<div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-flow: column wrap; 沿侧轴排列，超过沿正方向折列</div>
+		  	  		<div class="container" style="flex-flow: column wrap;<">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-flow: column wrap-reverse; 沿侧轴排列，超过沿主轴反方向折列 </div>
+		  	  		<div class="container" style="flex-flow: column wrap-reverse;<">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-flow: column-reverse wrap; <br/>沿侧轴反方向排列，超过沿主轴正方向折列 </div>
+		  	  		<div class="container" style="flex-flow: column-reverse wrap;<">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	     <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>flex-flow: column-reverse wrap-reverse; <br/>沿侧轴反方向排列，超过沿主轴反方向折列 </div>
+		  	  		<div class="container" style="flex-flow: column-reverse wrap-reverse;">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	</div>
+  	    </section>
+	    <!-- justify-content-->
+	    <section>
+	    	<p class="title">justify-content: flex-start | flex-end | center | space-between | space-around </p>
+	    	<div class="demo-group">
+	    		<div class="demo">
+		  	    	<div class="desc">display: flex;<br/>justify-content: flex-start; 默认值 item整体靠主轴起点</div>
+		  	  		<div class="container" style="justify-content: flex-start;<">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>justify-content: flex-end; item整体靠主轴终点</div>
+		  	  		<div class="container" style="justify-content: flex-end;<">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>justify-content: center;  item整体主轴上居中</div>
+		  	  		<div class="container" style="justify-content: center;<">
+			  	  	    <div class="item" style="margin-right:10px;"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>justify-content: space-between;  两端对齐，item之间(between)间隔相等</div>
+		  	  		<div class="container" style="justify-content: space-between;">
+			  	  	    <div class="item width-sm"></div>
+			  	  	    <div class="item width-sm"></div>
+			  	  	    <div class="item width-sm"></div>
+			  	  	    <div class="item width-sm"></div>
+			  	  	    <div class="item width-sm"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;<br/>justify-content: space-around; <br/>每个item两侧(around)留有相同距离，item之间间隔比item距边框距离大一倍 </div>
+		  	  		<div class="container" style="justify-content: space-around;">
+			  	  	    <div class="item width-sm"></div>
+			  	  	    <div class="item width-sm"></div>
+			  	  	    <div class="item width-sm"></div>
+			  	  	    <div class="item width-sm"></div>
+			  	  	    <div class="item width-sm"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex; <br/>flex-direction:column; <br/>justify-content: space-around; 沿侧轴排列的效果</div>
+		  	  		<div class="container" style="flex-direction:column;justify-content: space-around ;<">
+			  	  	    <div class="item height-sm"></div>
+			  	  	    <div class="item height-sm"></div>
+			  	    </div>
+		  	    </div>
+	    	</div>
+	    </section>
+	    <!-- align-items-->
+	    <section>
+	    	<p class="title">align-items: flex-start | flex-end | center | baseline | stretch </p>
+	    	<div class="demo-group">
+	    		<div class="demo">
+		  	    	<div class="desc">display: flex; <br/>align-items: flex-start; item整体靠侧轴起点</div>
+		  	  		<div class="container" style="align-items: flex-start;">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex; <br/>align-items: flex-end;item整体靠侧轴终点</div>
+		  	  		<div class="container" style="align-items: flex-end;">
+			  	  	    <div class="item"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+				<div class="demo">
+		  	    	<div class="desc">display: flex; <br/>align-items: center; item整体居侧轴中心</div>
+		  	  		<div class="container" style="align-items: center;">
+			  	  	    <div class="item" style="margin-right:10px;"></div>
+			  	  	    <div class="item"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex; <br/>align-items: baseline; 每个item第一行文字基线对齐</div>
+		  	  		<div class="container" style="align-items: baseline;">
+			  	  	    <div class="item" style="height:30px;line-height:30px;">第1行文字</div>
+			  	  	    <div class="item" style="height:45px;line-height:45px;">第1行文字</div>
+			  	  	    <div class="item" style="height:55px;line-height:55px;">第1行文字</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex; <br/>align-items: stretch;  <br/>item未设置height或height为auto，则占满(stretch)container高度</div>
+		  	  		<div class="container" style="align-items: stretch;">
+			  	  	    <div class="item" style="height:auto"></div>
+			  	  	    <div class="item" style="height:auto"></div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex; <span class="red">flex-direction: column;</span><br/>align-items: stretch;<br/>item未设置width或width为auto，则占满(stretch)container宽度</div>
+		  	  		<div class="container" style="flex-direction: column;align-items: stretch;">
+			  	  	    <div class="item" style="width:auto"></div>
+			  	  	    <div class="item" style="width:auto"></div>
+			  	    </div>
+		  	    </div>
+	    	</div>
+	    </section>
+	    <!-- align-content-->
+	    <section>
+		    <p class="title">align-content: flex-start | flex-end | center | space-between | space-around | stretch </p>
+			<div class="demo-group">
+				<div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-content: flex-start;</div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-content: flex-start;height:150px;">
+			  	  	    <div class="item">1</div>
+			  	  	    <div class="item">2</div>
+			  	  	    <div class="item">3</div>
+			  	  	    <div class="item">4</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-items: flex-start; <span class="red">align-items与align-content区别</span></div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-items: flex-start;;height:150px;">
+			  	  	    <div class="item">1</div>
+			  	  	    <div class="item">2</div>
+			  	  	    <div class="item">3</div>
+			  	  	    <div class="item">4</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-content: flex-end;</div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-content: flex-end;height:150px;">
+			  	  	    <div class="item">1</div>
+			  	  	    <div class="item">2</div>
+			  	  	    <div class="item">3</div>
+			  	  	    <div class="item">4</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-items: flex-end;<span class="red">align-items与align-content区别</span></div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-items: flex-end;height:150px;">
+			  	  	    <div class="item">1</div>
+			  	  	    <div class="item">2</div>
+			  	  	    <div class="item">3</div>
+			  	  	    <div class="item">4</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-content: center;</div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-content: center;height:150px;">
+			  	  	    <div class="item">1</div>
+			  	  	    <div class="item">2</div>
+			  	  	    <div class="item">3</div>
+			  	  	    <div class="item">4</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-items: center;<span class="red">align-items与align-content区别</span></div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-items: center;height:150px;">
+			  	  	    <div class="item">1</div>
+			  	  	    <div class="item">2</div>
+			  	  	    <div class="item">3</div>
+			  	  	    <div class="item">4</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-content: stretch;默认值</div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-content: stretch;height:150px;">
+			  	  	    <div class="item" style="height:auto">1</div>
+			  	  	    <div class="item" style="height:auto">2</div>
+			  	  	    <div class="item" style="height:auto">3</div>
+			  	  	    <div class="item" style="height:auto">4</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-items: stretch;<span class="red">align-items与align-content区别</span></div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-items: stretch;height:150px;">
+			  	  	    <div class="item" style="height:auto">1</div>
+			  	  	    <div class="item" style="height:auto">2</div>
+			  	  	    <div class="item" style="height:auto">3</div>
+			  	  	    <div class="item" style="height:auto">4</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-content: space-between;</div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-content: space-between;height:150px;">
+			  	  	    <div class="item">1</div>
+			  	  	    <div class="item">2</div>
+			  	  	    <div class="item">3</div>
+			  	  	    <div class="item">4</div>
+			  	  	    <div class="item">5</div>
+			  	  	    <div class="item">6</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">display: flex;  flex-wrap: wrap;<br/>align-content: space-around;</div>
+		  	  		<div class="container" style="flex-wrap: wrap;align-content: space-around;height:150px;">
+			  	  	    <div class="item">1</div>
+			  	  	    <div class="item">2</div>
+			  	  	    <div class="item">3</div>
+			  	  	    <div class="item">4</div>
+			  	  	    <div class="item">5</div>
+			  	  	    <div class="item">6</div>
+			  	    </div>
+		  	    </div>
+			</div>
+	    </section>
+
+	    <!-- align-self -->
+	    <section class="item-property">
+		    <p class="title">align-self: auto | flex-start | flex-end | center | baseline | stretch </p>
+			<div class="demo-group">
+				<div class="demo">
+		  	    	<div class="desc">align-self: auto; 默认继承container的align-items默认属性stretch< <br/>item自身沿侧轴方向的位置，覆盖container的align-items属性</div>
+		  	  		<div class="container">
+			  	  	    <div class="item" style="height:auto;align-self: auto;">auto</div>
+			  	  	    <div class="item" style="height:auto;align-self: flex-start;">flex-end</div>
+			  	  	    <div class="item" style="height:auto;align-self: flex-end;">flex-end</div>
+			  	  	    <div class="item" style="height:auto;align-self: center;">center</div>
+			  	  	    <div class="item" style="height:auto;align-self: baseline;">baseline</div>
+			  	  	    <div class="item" style="height:auto;align-self: stretch;">stretch</div>
+			  	    </div>
+		  	    </div>
+		  	    <div class="demo">
+		  	    	<div class="desc">[container] align-items: center;</div>
+		  	  		<div class="container" style="align-items: center;">
+			  	  	    <div class="item" style="height:auto;align-self: auto;">auto</div>
+			  	  	    <div class="item" style="height:auto;align-self: flex-start;">flex-end</div>
+			  	  	    <div class="item" style="height:auto;align-self: flex-end;">flex-end</div>
+			  	  	    <div class="item" style="height:auto;align-self: center;">center</div>
+			  	  	    <div class="item" style="height:auto;align-self: baseline;">baseline</div>
+			  	  	    <div class="item" style="height:auto;align-self: stretch;">stretch</div>
+			  	    </div>
+		  	    </div>
+			</div>
+	    </section>
+
+	    <section class="item-property">
+	    	<p class="title">order</p>
+	    	<div class="demo-group">
+	    		<div class="demo">
+		  	    	<div class="desc">原始顺序,默认值为0。相同order按原始顺序</div>
+		  	  		<div class="container">
+			  	  	    <div class="item">1</div>
+			  	  	    <div class="item">2</div>
+			  	  	    <div class="item">3</div>
+			  	  	    <div class="item">4</div>
+			  	    </div>
+		  	    </div>
+	    		<div class="demo">
+		  	    	<div class="desc">使用order后，order越小越靠前</div>
+		  	  		<div class="container">
+			  	  	    <div class="item" style="order: 3">1 | order: 3</div>
+			  	  	    <div class="item" style="order: 2">2 | order: 2</div>
+			  	  	    <div class="item" style="order: 1">3 | order: 1</div>
+			  	  	    <div class="item" style="order: 3">4 | order: 3</div>
+			  	    </div>
+		  	    </div>
+	    	</div>
+	    </section>
    </body>
 </html>
