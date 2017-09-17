@@ -1,12 +1,20 @@
+## 基本概念
+<img src="http://saki007ster.github.io/public/images/flex-container.png"/>
 
-参考
+- 主轴： main axis
+	- 主轴起点： main start
+	- 主轴终点： main end
+	
+- 交叉轴（侧轴）： cross axis
+	- 交叉轴起点： cross start
+	- 交叉轴终点： cross end
 
-- [使用弹性盒子进行高级布局](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/%E5%BC%B9%E6%80%A7%E6%A1%86%E7%9A%84%E9%AB%98%E7%BA%A7%E5%B8%83%E5%B1%80)
+- container和item，这两个不翻译最直白，叫容器和项目有点别扭
 
-## 介绍
 ### 生成弹性盒
 
-display: flex | inline-flex
+- display: flex  生成块盒
+- inline-flex  生成行内盒
 
 
 ### container属性
@@ -63,12 +71,14 @@ display: flex | inline-flex
 
 - flex-grow
 
- - 设置item的增长因数，不接受负值
+ - 设置item的增长因数，不接受负值。
+ - 按比例分配剩余空间，没有剩余空间时flex-grow无效
  - 默认值： 0
 
 - flex-shrink
 
 	- 设置item的收缩因素，不接受负值
+	- 每个item按比例缩小，使总缩小空间为不足的空间，空间足够时flex-shrink无效
 	- 默认值：1
 
 - flex-basis
@@ -79,10 +89,19 @@ display: flex | inline-flex
 - flex
 
  - 设置item的尺寸，包括flex-grow、flex-shrink、flex-basis
- - 默认值： 1 1 0
+ - 默认值： 0,1,auto
 
 
 ## 示例
 
 <iframe style="width:100%;height:1000px;border:none" 
+src="./index.html"></iframe>
+
+## 应用
+<iframe style="width:100%;height:800px;border:none" 
 src="./flex.html"></iframe>
+
+
+## 参考
+
+- [使用弹性盒子进行高级布局](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/%E5%BC%B9%E6%80%A7%E6%A1%86%E7%9A%84%E9%AB%98%E7%BA%A7%E5%B8%83%E5%B1%80)

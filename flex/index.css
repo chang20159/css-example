@@ -6,6 +6,7 @@ section{
     margin-bottom: 25px;
     font-size: 14px;
 }
+
 section .title{
 	border-left: 5px solid #ff6633;
 	padding-left: 5px;
@@ -98,22 +99,6 @@ section.item-property::after{
 	background-color: #0000FF;
 }
 
-.container.direction-row{
-	flex-direction: row;
-}
-
-.container.direction-row-reverse{
-	flex-direction: row-reverse;
-}
-
-.container.direction-column{
-	flex-direction: column;
-}
-
-.container.direction-column-reverse{
-	flex-direction: column-reverse;
-}
-
 .container .width-sm{
 	width: 60px;
 }
@@ -121,7 +106,6 @@ section.item-property::after{
 .container .height-sm{
 	height: 15px;
 }
-
 
 .red{
 	color: #ff6633;
