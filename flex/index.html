@@ -412,7 +412,7 @@
 			  	    </div>
 		  	    </div>
 		  	    <div class="demo">
-		  	    	<div class="desc">container宽500，每个item宽200，剩余空间100px，按2:3分配即40px和60px</div>
+		  	    	<div class="desc">container宽500，每个item宽200，剩余空间100px，按flex-grow的比例2:3分配即40px和60px</div>
 		  	  		<div class="container">
 			  	  	    <div class="item" style="flex-grow: 2">flex-grow: 2; width: 200 + 40 = 240px</div>
 			  	  	    <div class="item" style="flex-grow: 3">flex-grow: 3; width: 200 + 60 = 260px</div>
@@ -429,7 +429,7 @@
 			  	    </div>
 		  	    </div>
 		  	    <div class="demo">
-		  	    	<div class="desc">flex-grow为0或不设置flex-grow，则是原始宽度50px，剩余的空间有450px，按比例分配，占比是30:20,所以第一个230,第三个220</div>
+		  	    	<div class="desc">container宽500，item宽分别为200|50|200。中间的item的flex-grow为0或不设置flex-grow，则是原始宽度50px，剩余的空间有450px，按flex-grow比例分配，占比是30:20,所以第一个230,第三个220</div>
 		  	  		<div class="container">
 			  	  	    <div class="item" style="flex-grow: 3">flex: 3</div>
 			  	  	    <div class="item" style="width:50px;">50px</div>
