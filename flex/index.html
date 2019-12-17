@@ -489,7 +489,8 @@
 		  	    </div>
 		  	    <div class="demo">
 		  	    	<div class="desc">空间不足时，按照flex-basis设置的值与根据flex-basis设置的值计算出的item本身总宽度的比例来分配在container中的宽度<br/>
-		  	    	400/(400+200)=2/3,flex-basis设置为400px的item宽度为 500 * 2/3 = 333.33 </div>
+					  第1个item宽400(flex-basis设置),第2个宽200，总共需要600，但container只有500，<br/>
+					  flex-basis设置为400px的item 应占空间的400/(400+200)=2/3，宽度为 500 * 2/3 = 333.33  </div>
 		  	  		<div class="container">
 			  	  	    <div class="item" style="flex-basis: 400px">flex-basis: 400px;  333.33px</div>
 			  	  	    <div class="item">166.67px</div>
