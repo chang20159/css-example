@@ -478,7 +478,7 @@
 	    </section>
 		<!-- flex-basis -->
 	    <section class="item-property">
-	    	<p class="title">flex-basis<br/>设置伸缩基准值,auto就是原始尺寸的大小</p>
+	    	<p class="title">flex-basis<br/>设置伸缩基准值,auto就是原始尺寸的大小（注意：flex-shrink默认为1，空间不足时默认会收缩）</p>
 	    	<div class="demo-group">
 		  	    <div class="demo">
 		  	    	<div class="desc">空间足够时，flex-basis相当于width或height(沿侧轴排列)</div>
@@ -497,7 +497,7 @@
 			  	    </div>
 		  	    </div>
 		  	    <div class="demo">
-		  	    	<div class="desc">第一个item设置flex-basis:100px,总长 100 + 200 + 200 = 500，第一个item的宽为100px,剩余两项等比缩小</div>
+		  	    	<div class="desc">第一个item设置flex-basis:100px,总长 100 + 200 + 200 = 500，第一个item的宽为100px,剩余两项宽度正好</div>
 		  	  		<div class="container">
 			  	  	    <div class="item" style="flex-basis: 100px">flex-basis:100px</div>
 			  	  	    <div class="item"></div>
