@@ -5,19 +5,19 @@
 	  	<link rel="stylesheet" type="text/css" href="./index.css">
    </head>
    <body>
-   		<!-- display: flex; -->
+		<p class="title">这里灰色背景区域为container，内边距宽都是500px, item的宽都是200px,图中标出的是计算后的值</p>
    		<section>
    			<p class="title">display: flex | inline-flex;</p>
    			<div class="demo-group">
    				<div class="demo">
-		  	    	<div class="desc">display: flex;<br/>container横向占满父容器</div>
+		  	    	<div class="desc">display: flex;<br/>container横向占满父容器，宽度为父容器内边距宽度</div>
 		  	  		<div class="container">
 			  	  	    <div class="item">width:200px</div>
 			  	  	    <div class="item">width:200px</div>
 			  	    </div>
 		  	    </div>
 		  	  	<div class="demo">
-		  	    	<div class="desc">display: flex;<br/>item超过平分</div>
+		  	    	<div class="desc">display: flex;<br/>container横向占满父容器，宽度为父容器内边距宽度，item超过平分</div>
 		  	  		<div class="container">
 			  	  	    <div class="item">width:200px</div>
 			  	  	    <div class="item">width:200px</div>
@@ -32,7 +32,7 @@
 			  	    </div>
 		  	    </div>
 		  	  	<div class="demo">
-		  	    	<div class="desc">display: inline-flex;<br/>container宽度为子元素宽度</div>
+		  	    	<div class="desc">display: inline-flex;<br/>container宽度为子元素宽度,宽度够宽时container会超出父容器</div>
 		  	  		<div class="container container-inline">
 			  	  	    <div class="item">width:200px</div>
 			  	  	    <div class="item">width:200px</div>
@@ -544,7 +544,7 @@
 			  	    </div>
 		  	    </div>
 		  	    <div class="demo">
-		  	    	<div class="desc">flex: 0 0 auto, 可简写成flex:none，保持原始尺寸</div>
+		  	    	<div class="desc">flex: 0 0 auto, 可简写成flex:none，空间不足时不收缩保持原始尺寸</div>
 		  	  		<div class="container">
 			  	  	    <div class="item" style="flex: none;">flex: none; 200px</div>
 			  	  	    <div class="item">150px</div>
